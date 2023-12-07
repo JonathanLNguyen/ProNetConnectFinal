@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Group Page</title>
+    <link rel="stylesheet" href="group page.css">
+    <link rel="stylesheet" href="Navigation Bar Style Sheet.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+          <a href="Home Page.html"><img src="ProNetConnect Logo.png" alt="Company Logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="Home Page.html"><img src="Home.png" alt="Home">Home</a>
+            <a href="Jobs Page.html"><img src="jobs.png" alt="Jobs">Jobs</a>
+            <a href="Messages Page.html"><img src="Chat.png" alt="Messages">Messages</a>
+            <a href="News Page.html"><img src="news.png" alt="News">News</a>
+            <a href="group-page.html"><img src="groups.png" alt="Groups">Groups</a>
+            <a href="Profile Page.html"><img src="profile.png" alt="Profile">Profile</a>
+            <a href="Landing Page.html"><img src="images/signout-modified.png" alt="Signout">Signout</a>
+        </div>
+    </div>
+    <div class="group-container">
+        <!-- Cover photo area -->
+        <div class="cover-photo-container">
+            <img src="cover_photo_placeholder.jpg" alt="Cover Photo" class="cover-photo">
+        </div>
+
+        <!-- Main group content area -->
+        <div class="group-content">
+            <!-- Left content - Posts Section -->
+            <div class="left-content">
+                <!-- Post creation container -->
+                <div class="post-creation-container">
+                    <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+                    <div class="post-actions">
+                        <input type="file" id="addPhotoVideo" accept="image/*" style="display:none;" />
+                        <label for="addPhotoVideo" class="photo-video-btn">Photo/video</label>
+                        <button type="submit" class="post-btn">Post</button>
+                    </div>
+                </div>
+                <!-- Placeholder for posts list -->
+                <div id="postsList">
+                    <!-- Posts will be dynamically added here -->
+                </div>
+            </div>
+
+            <!-- Right content - Group Details Sidebar -->
+            <div class="right-content">
+                <div class="group-details">
+                    <h3 id="groupName">Group Name Placeholder</h3>
+                    <p id="groupPrivacy">Group Privacy Placeholder</p>
+                    <p><strong>Members:</strong> <span id="memberCount">Member Count Placeholder</span></p>
+                    <!-- Location section -->
+                    <div class="group-location">
+                        <h4>Location</h4>
+                        <p id="groupLocation">Location Placeholder</p>
+                    </div>
+                    <!-- Rules section -->
+                    <div class="group-rules">
+                        <h4>Rules</h4>
+                        <p id="groupRules">Rules Placeholder</p>
+                    </div>
+                    <!-- Industry section -->
+                    <div class="group-industry">
+                        <h4>Industry</h4>
+                        <p id="groupIndustry">Industry Placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="group-page-script.js"></script>
+</body>
+</html>

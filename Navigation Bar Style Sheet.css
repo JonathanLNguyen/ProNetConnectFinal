@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 110px;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.logo img {
+  height: 85px; 
+  width: 350px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-family: 'Roboto', sans-serif
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.nav-links a img {
+  height: 55px; 
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.content {
+  margin-top: 80px; /* Adjust this value to create space between the navbar and content */
+  padding: 20px;
+}

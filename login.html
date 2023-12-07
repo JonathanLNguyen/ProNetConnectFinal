@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+                <label>Email</label> 
+                <input type="email" name="email" placeholder="Email" id = "email" required maxlength="20">
+                <label>Username</label>  
+                <input type="text" name="username" placeholder="Username" id = "username" required maxlength="20">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password" id = "password" required>
+                <button class = "login_button" onclick="checkCredentials()"> Login </button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="login.js"></script>
+
+    <script>
+        function displayInvalidCredentialsAlert() {
+            alert("Invalid credentials. Please check your username and password and try again.");
+        }
+        function validateFields() {
+            const email = document.getElementById('email').value.trim();
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (email === '' || username === '' || password === '') { 
+                alert('Please fill in all fields.');
+                return false;
+            }
+            return true;
+        }
+        function validateAndCheckCredentials() {
+            if (validateFields()) {
+                checkCredentials().then(validCredentials => {
+            if (!validCredentials) {
+                displayInvalidCredentialsAlert();
+            }
+        }).catch(error => {
+            console.error("Error validating credentials:", error);
+            // Handle error while checking credentials
+        });
+    }
+}
+</script>
+</body>
+</html>

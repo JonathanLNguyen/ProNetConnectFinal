@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Listings</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Navbar Landing Page Style Sheet.css">
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .header, .footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  .job-listing {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    text-decoration: none; /* Remove underline from all links */
+    color: inherit; /* Inherit text color from parent */
+    position: relative; /* For absolute positioning of read more */
+  }
+
+  .job-listing:hover {
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .job-listing h2 {
+    color: #333;
+    font-size: 1.5em;
+  }
+
+  .job-listing p {
+    color: #666;
+    margin: 0.5em 0;
+  }
+  
+  .job-summary {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+  }
+
+  .read-more {
+    color: #0066cc;
+    cursor: pointer;
+    text-decoration: underline;
+    position: absolute; /* Position it at the bottom of the job listing */
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  /* Responsive grid */
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    .job-listing {
+      padding: 1.5em;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="Home Page.html"><img src="ProNetConnect Logo.png" alt="Company Logo"></a>
+    </div>
+    <div class="nav-links">
+        <a href="Home Page.html"><img src="Home.png" alt="Home">Home</a>
+        <a href="Jobs Page.html"><img src="jobs.png" alt="Jobs">Jobs</a>
+        <a href="Messages Page.html"><img src="Chat.png" alt="Messages">Messages</a>
+        <a href="News Page.html"><img src="news.png" alt="News">News</a>
+        <a href="group-page.html"><img src="groups.png" alt="Groups">Groups</a>
+        <a href="Profile Page.html"><img src="profile.png" alt="Profile">Profile</a>
+        <a href="Landing Page.html"><img src="images/signout-modified.png" alt="Signout">Signout</a>
+    </div>
+</div>  
+<div class="header">
+  <h1>Recommended Jobs</h1>
+</div>
+
+<div class="grid-container">
+  <!-- Job 1 -->
+  <div class="job-listing">
+    <a href="https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers/job/MI-Detroit/IT-Services--Internal-Threat-Analyst-Manager--US-Remote-_487169WD?source=172911" target="_blank" rel="noopener noreferrer">
+      <h2>IT Services- Internal Threat Analyst Manager (US Remote)</h2>
+      <p class="company-name">PwC</p>
+      <p class="location">Detroit, MI (Remote) - $103K/yr - $199K/yr</p>
+      <br>
+      <p class="job-summary" id="summary-1">
+    	A career in Information Security, within Internal Firm Services, will provide you with the opportunity to develop and support our internal security technologies and services across the entire global and local PwC network. You’ll focus on being the forefront of designing, developing, and implementing information technology including hardware, software, and networks that enhances security of internal information and protect our firms intellectual assets.
+      </p>
+    </a>
+    <span class="read-more" onclick="toggleSummary(event, 'summary1')">Read More</span>
+  </div>
+
+  <!-- Job 2 -->
+  <div class="job-listing">
+    <a href="https://jobs.jobvite.com/careers/splunk-careers/job/oRRppfwg?__jvst=Job%20Board&__jvsd=LinkedIn" target="_blank" rel="noopener noreferrer">
+         <h2>Principal Cybersecurity Threat Response Analyst</h2>
+      <p class="company-name">Splunk</p>
+      <p class="location">Santa Clara, CA - $42,200/yr - $235,400/yr</p>
+      <br>
+      <p class="job-summary" id="summary-1">
+        Splunk is here to build a safer and more resilient digital world. The world's leading enterprises use our unified security and observability platform to keep their digital systems secure and reliable. While customers love our technology, it's our people that make Splunk stand out as an amazing career destination and why we've won so many awards as the best place to work. If you become a Splunker, we want your whole, authentic self, what we call your "million data points". So bring your work</p>
+    </a>
+    <span class="read-more" onclick="toggleSummary(event, 'summary2')">Read More</span>
+  </div>
+
+  <!-- Job 3 -->
+  <div class="job-listing">
+    <a href="https://www.kpmguscareers.com/jobdetail/?jobId=108211&srcCat=Direct+Contact&specSrc=LinkedIn">
+<h2>Senior Security Operations Analyst</h2>
+      <p class="company-name">KMPG US</p>
+      <p class="location">San Jose, CA (On-site) - $76,500/yr - $149,900/yr</p>
+      <br>
+      <p class="job-summary" id="summary-1">
+        Known for being a great place to work and build a career, KPMG provides audit, tax and advisory services for organizations in today's most important industries. Our growth is driven by delivering real results for our clients. It's also enabled by our culture, which encourages individual development, embraces an inclusive environment, rewards innovative excellence and supports our communities. With qualities like those, it's no wonder we're consistently      </p>
+    </a>
+    <span class="read-more" onclick="toggleSummary(event, 'summary3')">Read More</span>
+  </div>
+
+  <!-- Job 4 -->
+  <div class="job-listing">
+    <a href="https://www.governmentjobs.com/careers/sbcounty/jobs/4191760/it-application-security-analyst" target="_blank" rel="noopener noreferrer">
+<h2>IT Application Security Analyst</h2>
+      <p class="company-name">County of Santa Barabara</p>
+      <p class="location">United States (Remote) - $66K/yr - $88K/yr</p>
+      <br>
+      <p class="job-summary" id="summary-1">
+        This is an excellent opportunity to join the Information Technology Department at the County of Santa Barbara. Come and be a part of a team of talented individuals who are passionate about fostering a culture of teamwork, learning and respect!
+      </p>
+    </a>
+    <span class="read-more" onclick="toggleSummary(event, 'summary4')">Read More</span>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 Job Listings, Inc.</p>
+</div>
+
+<script>
+function toggleSummary(event, summaryId) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  var summary = document.getElementById(summaryId);
+  var readMoreTxt = summary.nextElementSibling;
+
+  if (summary.classList.contains('open')) {
+    // Collapse the summary
+    summary.classList.remove('open');
+    summary.style.webkitLineClamp = '3';
+    readMoreTxt.textContent = 'Read More';
+  } else {
+    // Expand the summary
+    summary.classList.add('open');
+    summary.style.webkitLineClamp = 'none';
+    readMoreTxt.textContent = 'Read Less';
+  }
+}
+</script>
+
+</body>
+</html>

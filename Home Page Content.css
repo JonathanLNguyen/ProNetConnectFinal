@@ -1,0 +1,108 @@
+.frame-8, .frame-8 * {
+    box-sizing: border-box;
+    }
+
+.frame-8 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+    
+
+.row {
+   display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 1248px;
+    position: relative;
+   }
+
+.content-box {
+   display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 0;
+    position: relative;
+   }
+
+.picture {
+   border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+   flex-shrink: 0;
+    height: 220px;
+    position: relative;
+   }
+
+.content {
+   padding: 0px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+   flex-shrink: 0;
+    position: relative;
+   }
+
+.title-category {
+   display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+   flex-shrink: 0;
+    position: relative;
+   }
+
+.title-container {
+   display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+   flex-shrink: 0;
+    position: relative;
+   }
+
+.title {
+   color: var(--violet-700, #6d28d9);
+    text-align: left;
+    font: 500 18px/110% 'Roboto', sans-serif;
+    position: relative;
+    flex: 1;
+   }
+
+.paragraph {
+   color: var(--black, #000000);
+    text-align: left;
+    font: var(--body-l, 400 18px/160% 'Roboto', sans-serif);
+    position: relative;
+    align-self: stretch;
+   }
+
+.title2 {
+   color: #6d28d9;
+    text-align: left;
+    font: 500 18px/110% 'Roboto', sans-serif;
+    position: relative;
+    flex: 1;
+   }
+

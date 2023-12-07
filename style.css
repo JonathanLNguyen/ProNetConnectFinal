@@ -1,0 +1,241 @@
+.home-page-without-login-landing-pt-1, .home-page-without-login-landing-pt-1 * {
+  box-sizing: border-box;
+  }
+.home-page-without-login-landing-pt-1 {
+ background: #ffffff;
+  padding: 10px;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+ }
+
+.rectangle-3 {
+ background: #aaaaaa;
+  width: 1920px;
+  height: 843px;
+  position: absolute;
+  left: 0px;
+ top: 1px;
+ }
+
+.rectangle-4 {
+ background: #000000;
+  width: 1920px;
+  height: 236px;
+  position: absolute;
+  left: 0px;
+ top: 844px;
+ }
+
+.header-and-paragraph {
+ display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 212px;
+ top: 189px;
+ }
+
+.main-headline {
+ color: var(--blue-gray-900, #0f172a);
+  text-align: left;
+  font: var(--heading-1-m, 800 72px/110% 'Roboto', sans-serif);
+  position: relative;
+  width: 575px;
+ }
+
+.scribble {
+ flex-shrink: 0;
+  position: absolute;
+  left: 0px;
+ top: 79px;
+  overflow: visible;
+ }
+
+.paragraph {
+ color: var(--blue-gray-900, #0f172a);
+  text-align: left;
+  font: var(--body-xxl, 400 24px/160% 'Roboto', sans-serif);
+  position: relative;
+  width: 575px;
+ }
+
+.footer-text-container {
+ display: flex;
+  flex-direction: row;
+  gap: 172px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 45px;
+ top: 898px;
+ }
+
+.keep-text-spaced-out-in-footer {
+ display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+ }
+
+.footer-text-style {
+ color: var(--blue-gray-200, #e2e8f0);
+  text-align: left;
+  font: var(--body-m, 400 16px/140% 'Roboto', sans-serif);
+  position: relative;
+ }
+
+.position-applestore{
+     position: absolute;
+     top: 65px;
+     left: 1275px;
+ }
+
+.position-googleplay{
+     position: absolute;
+     top: 65px;
+     left: 1400px;
+ }
+
+.position-pronetconnectlogo-landing{
+     position: absolute;
+     top: -65px;
+     left: 1575px;
+ }
+
+.position-socialmedia-landing{
+     position: absolute;
+     top: -5px;
+     left: 1210px;
+ }
+
+.position-stockphoto-landing{
+     position: absolute;
+     top: -897px;
+     left: 825px;
+ }
+
+
+.button-text {
+ color: var(--white, #ffffff);
+  text-align: left;
+  font: var(--button-xl, 700 24px/24px 'Roboto', sans-serif);
+  position: relative;
+ }
+
+.icon-jam-icons-outline-logos-arrow-right {
+ flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+ }
+
+.login-button {
+ display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 207px;
+ top: 654px;
+ }
+
+#loginBtn {
+   background: #6b21a8;
+   border-radius: 50px;
+   border-style: solid;
+   border-color: #000000;
+   border-width: 2px;
+   padding: 20px 24px 20px 24px;
+   display: flex;
+   flex-direction: row;
+   gap: 0px;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+   position: relative;
+   color: white;
+   text-align: left;
+   font: var(--button-xl, 700 24px/24px 'Roboto', sans-serif);
+   left: -1025px;
+   top: -385px;
+}
+
+#registerBtn {
+background: #6b21a8;
+border-radius: 50px;
+border-style: solid;
+border-color: #000000;
+border-width: 2px;
+padding: 20px 24px 20px 24px;
+display: flex;
+flex-direction: row;
+gap: 0px;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+position: relative;
+color: white;
+text-align: left;
+font: var(--button-xl, 700 24px/24px 'Roboto', sans-serif);
+left: -1475px;
+top: -385px;
+} 
+
+#loginBtn:hover{
+   opacity: 0.753;
+}
+
+#registerBtn:hover {
+opacity: 0.753;
+}
+
+/* Styles for the modal */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4);
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+background-color: #fefefe;
+padding: 20px;
+border: 1px solid #888;
+max-width: 400px; 
+text-align: center;
+position: relative;
+width: 100%; 
+}
+
+.close {
+color: #aaa;
+position: absolute;
+top: 10px;
+right: 20px;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.form {
+    background-color: #000000; /* background color of the form */
+    max-width: 450px;            /* maximum width */
+    margin: 0 auto;              /* margin & position*/
+    padding: 35px;               /* padding */
+    text-align: center;          /* text alignment */
+
+}

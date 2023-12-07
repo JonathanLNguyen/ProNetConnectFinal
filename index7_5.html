@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style7.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="activity-bar">
+            <!-- Sample Contacts -->
+            <div class="contact" data-contact-id="1">Contact 1<div class="last-message-info"></div></div>
+            <div class="contact" data-contact-id="2">Contact 2<div class="last-message-info"></div></div>
+            <div class="contact" data-contact-id="3">Contact 3<div class="last-message-info"></div></div>
+            <div class="contact" data-contact-id="4">Contact 4<div class="last-message-info"></div></div>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header">Select a Contact</div>
+            <ul id="messages"></ul>
+            <div class="message-input">
+                <input id="textbox" type="text" placeholder="Type a message...">
+                <button id="button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script7.js"></script>
+</body>
+</html>

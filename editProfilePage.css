@@ -1,0 +1,122 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; 
+}
+.profile-container {
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.profile-header {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px; 
+}
+
+.profile-header img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about, .skills {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px; 
+    flex: 1; 
+    margin: 10px; 
+}
+
+.about-entry, .skills-entry {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.details-container .experience h2,
+.details-container .licenses h2 {
+    width: 100%; /* Ensures the width spans the container */
+    border-bottom: 1px solid #ccc; /* Optional: Adds a visual separator */
+    line-height: 0.1em; /* Helps to visually align the text at the center */
+    margin: 10px 0 20px; /* Adjust top and bottom margin as needed */
+}
+
+.experience, .licenses {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1; 
+    margin: 10px; 
+}
+
+.experience-entry, .license-entry {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.experience-entry:last-child, .license-entry:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+    font-size: 0.9em; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about,
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textarea-container {
+    width: 40%;
+    margin-top: 5px; /* Adjust as needed */
+}
+
+textarea {
+    width: calc(100% - 10px); /* Adjust the width as needed */
+    padding: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

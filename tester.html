@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tester</title>
+    <link rel="stylesheet" href="ProNetConnectStyle.css">
+</head>
+<body>
+    <!-- Landing Page Header --> 
+ <div class="home-page-without-login-landing-pt-1" >
+    <!-- The Main Body Gray Box -->
+    <div class="rectangle-3" >
+    </div>
+    <!-- The Black Footer Box -->
+    <div class="rectangle-4" >
+    </div>
+    <!-- Main Headline / Scribble / Paragraph -->
+    <div class="header-and-paragraph" >
+          <div class="main-headline" >
+ProNetConnect </div>
+          <svg class="scribble" width="492" height="35" viewBox="0 0 492 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11.0106C64.5669 3.95492 299.591 -9.76783 492 11.0106C392.123 11.0106 261.992 13.1117 178.205 35" stroke="#6B21A8" stroke-width="10" stroke-linejoin="round"/>
+          </svg>
+
+          <div class="paragraph" >
+The premier platform connecting ambitious individuals and fostering meaningful connections. Whether you&#039;re a seasoned expert, a budding entrepreneur, or a recent graduate, our platform provides the ideal space to network, collaborate, and grow. </div>
+    </div>
+    <!-- Footer (Non-functioning Text) -->
+    <div class="footer-text-container" >
+          <div class="keep-text-spaced-out-in-footer" >
+                <div class="footer-text-style " >
+About Us </div>
+                <div class="footer-text-style" >
+Contact Us </div>
+                <div class="footer-text-style" >
+Digital Media </div>
+          </div>
+          <div class="keep-text-spaced-out-in-footer" >
+                <div class="footer-text-style " >
+Reports </div>
+                <div class="footer-text-style " >
+Documentation </div>
+                <div class="footer-text-style " >
+Accessibility </div>
+          </div>
+          <div class="keep-text-spaced-out-in-footer" >
+                <div class="footer-text-style " >
+Terms of Service </div>
+                <div class="footer-text-style " >
+Privacy Policy </div>
+                <div class="footer-text-style " >
+Manage Cookies </div>
+          </div>
+          <div class="keep-text-spaced-out-in-footer" >
+                <div class="footer-text-style " >
+Help Center </div>
+                <div class="footer-text-style " >
+Blog </div>
+                <div class="footer-text-style " >
+FAQs </div>
+          </div>
+          <div class="keep-text-spaced-out-in-footer" >
+                <div class="footer-text-style " >
+Home </div>
+                <div class="footer-text-style " >
+Integrations </div>
+                <div class="footer-text-style " >
+Resources </div>
+    </div>
+    <!-- Still the footer (Non-functioning Buttons) -->
+    <!-- Appstore/Google Play (Non-functioning Buttons) -->
+<img src="Apple Store.png" alt="Apple Store Button Here" class="position-applestore">
+<img src="Google Play.png" alt="Google Play Button Here" class="position-googleplay">
+
+    <!-- Team Project Web Logo  -->
+<img src="ProNetConnect Logo.png" alt="Team Project Logo Here" class="position-pronetconnectlogo-landing">      
+
+
+    <!-- Social Media Icons  -->
+<img src="Social Media Icons.png" alt="Social Media Icons Here" class="position-socialmedia-landing">
+
+    <!-- Stock Photo Main Body  -->
+<img src="Stock Networking.jpg" alt="Stock Networking Photo Here" width="1050" height="844" class="position-stockphoto-landing">
+
+
+    <!-- Register Button & Login (Non-functioning Buttons) -->
+
+<button id="loginBtn">Login</button>
+<button id="registerBtn">Register</button>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form method="POST" action="Home Page.html">
+        <h2>Login Form</h2>
+        <!-- Login form fields here -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Remember Me</label><br><br>
+
+            <button type="submit" id="loginSubmitBtn">Login</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+        </form>
+    </div>
+</div>
+
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register Form</h2>
+        <!-- Register form fields here -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="repeatPassword">Repeat Password:</label>
+            <input type="password" id="repeatPassword" name="repeatPassword" required><br><br>
+
+            <button type="button" id="cancelBtn">Cancel</button>
+            <button type="submit" id="submitBtn">Submit</button>
+    </div>
+</div>
+
+<script src="ProNetConnectScript.js"></script>
+</body>
+</html>

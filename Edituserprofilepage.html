@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit User Profile</title>
+<link rel="stylesheet" href="editProfilePage.css">
+<link rel="stylesheet" href="Navigation Bar Style Sheet.css">
+
+<script src="EditProfilePage.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+          <a href="Home Page.html"><img src="ProNetConnect Logo.png" alt="Company Logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="Home Page.html"><img src="Home.png" alt="Home">Home</a>
+            <a href="Jobs Page.html"><img src="jobs.png" alt="Jobs">Jobs</a>
+            <a href="Messages Page.html"><img src="Chat.png" alt="Messages">Messages</a>
+            <a href="News Page.html"><img src="news.png" alt="News">News</a>
+            <a href="group-page.html"><img src="groups.png" alt="Groups">Groups</a>
+            <a href="Profile Page.html"><img src="profile.png" alt="Profile">Profile</a>
+            <a href="Landing Page.html"><img src="images/signout-modified.png" alt="Signout">Signout</a>
+        </div>
+    </div>
+
+<form id="profileForm" onsubmit="return updateProfile();">
+    <div class="profile-container">
+        <div class="profile-header">
+            <label for="profilePictureUrl">Profile Picture URL:</label>
+            <input type="text" id="profilePictureUrl" name="profilePictureUrl">
+            
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName">
+
+            <label for="userOccupation">Occupation:</label>
+            <input type="text" id="userOccupation" name="userOccupation">
+        </div>
+        
+        <div class="about">
+            <label for="aboutText">About:</label>
+            <div class="textarea-container">
+                <textarea id="aboutText" name="aboutText"></textarea>
+            </div>
+        </div>
+        
+        <div class="skills">
+            <label for="skillsText">Skills:</label>
+            <div class="textarea-container">
+                <textarea id="skillsText" name="skillsText"></textarea>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="details-container">
+        <div class="experience">
+            <h2>Experience</h2>
+            <div class="experience-entry">
+                <input type="text" placeholder="Job Title at Company" name="jobTitle[]">
+                <input type="text" placeholder="Starting Year - Ending Year" name="jobYear[]">
+                <input type="text" placeholder="Job Description Text" name="JobDescriptionText[]">
+            </div>
+            <div class="experience-entry">
+                <input type="text" placeholder="Job Title at Company" name="jobTitle[]">
+                <input type="text" placeholder="Starting Year - Ending Year" name="jobYear[]">
+                <input type="text" placeholder="Job Description Text" name="JobDescriptionText[]">
+            </div>
+            <div class="experience-entry">
+                <input type="text" placeholder="Job Title at Company" name="jobTitle[]">
+                <input type="text" placeholder="Starting Year - Ending Year" name="jobYear[]">
+                <input type="text" placeholder="Job Description Text" name="JobDescriptionText[]">
+            </div>
+            <div class="experience-entry">
+                <input type="text" placeholder="Job Title at Company" name="jobTitle[]">
+                <input type="text" placeholder="Starting Year - Ending Year" name="jobYear[]">
+                <input type="text" placeholder="Job Description Text" name="JobDescriptionText[]">
+            </div>
+        </div>
+        
+        <div class="licenses">
+            <h2>Licenses and Certifications</h2>
+            <div class="license-entry">
+                <input type="text" placeholder="Certification Name" name="certName[]">
+                <input type="text" placeholder="Institution" name="certInstitution[]">
+                <input type="text" placeholder="Skills" name="certSkills[]">
+            </div>
+            <div class="license-entry">
+                <input type="text" placeholder="Certification Name" name="certName[]">
+                <input type="text" placeholder="Institution" name="certInstitution[]">
+                <input type="text" placeholder="Skills" name="certSkills[]">
+            </div>
+            <div class="license-entry">
+                <input type="text" placeholder="Certification Name" name="certName[]">
+                <input type="text" placeholder="Institution" name="certInstitution[]">
+                <input type="text" placeholder="Skills" name="certSkills[]">
+            </div>
+            <div class="license-entry">
+                <input type="text" placeholder="Certification Name" name="certName[]">
+                <input type="text" placeholder="Institution" name="certInstitution[]">
+                <input type="text" placeholder="Skills" name="certSkills[]">
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="button-container">
+        <input type="submit" value="Update Profile">
+    </div>
+</form>
+</body>
+</html>
